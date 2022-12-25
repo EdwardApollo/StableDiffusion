@@ -667,7 +667,7 @@ def initialize_rootdir(root:str,yes_to_all:bool=False):
     print(f'\nYou may change the chosen output directory at any time by editing the --outdir options in "{Globals.initfile}",')
     print(f'You may also change the runtime directory by setting the environment variable INVOKEAI_ROOT.\n')
 
-    enable_safety_checker = True
+    enable_safety_checker = False
     if not yes_to_all:
         print('The NSFW (not safe for work) checker blurs out images that potentially contain sexual imagery.')
         print('It can be selectively enabled at run time with --nsfw_checker, and disabled with --no-nsfw_checker.')
